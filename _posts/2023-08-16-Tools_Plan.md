@@ -2,10 +2,10 @@
 toc: true
 comments: true
 layout: post
-title: VSCode, Python, Jupyter, ...
+title: Tool Implementation
 description: Tools and equipment setup for tools used throughout this class.
-courses: { csse: {week: 0}, csp: {week: 0}, csa: {week: 0} }
-type: hacks
+courses: { csa: {week: 0} }
+type: plans
 ---
 
 ## Hacks

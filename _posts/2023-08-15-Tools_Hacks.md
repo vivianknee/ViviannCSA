@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Tools Setup
 description: Importance of Tools
-type: plans
+type: hacks
 courses: { csa: {week: 0} }
 categories: [C1.4]
 ---

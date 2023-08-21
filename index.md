@@ -15,7 +15,7 @@ Hi, my name is Vivian! I'm a rising senior for the class of 2024! Excited to do 
 
 # Here's my Tri 1 Schedule
 
-[Click this](https://delnorte.powayusd.com/apps/bell_schedules/) to view the Del Norte's Schedule
+[Click this](https://delnorte.powayusd.com/apps/bell_schedules/) for Del Norte's Schedule
 
 | Class | Period | Homework |
 |---|---|---|
