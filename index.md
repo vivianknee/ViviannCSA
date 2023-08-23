@@ -3,6 +3,57 @@ layout: default
 title: Student Blog
 ---
 
+<!-- <html>
+<body>
+<header>
+
+  <div id="container">
+    <nav>
+      <ul>
+        <li class="fork"><a href="{{site.baseurl}}/">Home</a></li>
+        <li class="fork"><a href="{{site.baseurl}}/csa">CSA</a></li>
+        <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
+        <li class="title"><a href="{{ site.github.repository_url }}#readme">View On GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+</body>
+</html>
+
+<style>
+    body{
+        margin: 0;
+        background: #222;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header{
+        background: #55a6da;
+    }
+
+    header :: after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    nav{
+        float: center;
+    }
+
+    nav ul{
+        margin: 0;
+    }
+
+</style> -->
+
 ## Vivian's CSA Blog 
 Hi, my name is Vivian! I'm a rising senior for the class of 2024! Excited to do another year of code code code. Here's a little bit about me:
 
