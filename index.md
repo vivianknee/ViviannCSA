@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: none
 title: Student Blog
 ---
 
-<!-- <html>
+<html>
 <body>
 <header>
 
@@ -24,7 +24,7 @@ title: Student Blog
 <style>
     body{
         margin: 0;
-        background: #222;
+        background: white;
         font-family: 'Work Sans', sans-serif;
         font-weight: 300;
     }
@@ -36,9 +36,10 @@ title: Student Blog
 
     header{
         background: #55a6da;
+        padding: 20px;
     }
 
-    header :: after{
+    header ::after{
         content: '';
         display: table;
         clear: both;
@@ -50,9 +51,47 @@ title: Student Blog
 
     nav ul{
         margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
-</style> -->
+    nav li{
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+    }
+
+    nav a{
+        color: #444;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    nav a:hover{
+        color: #000;
+    }
+
+    nav a::before{
+        content: '';
+        display: block;
+        height: 5px;
+        width: 100px;
+        background-color: #444;
+
+        position: absolute;
+        top: 0;
+        width: 0%;
+
+        transition: all ease-in-out: 250ms;
+    }
+
+    nav a:hover::before{
+        width: 100%;
+    }
+
+</style>
 
 ## Vivian's CSA Blog 
 Hi, my name is Vivian! I'm a rising senior for the class of 2024! Excited to do another year of code code code. Here's a little bit about me:
