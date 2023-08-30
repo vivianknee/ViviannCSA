@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 1 Java Plans
+title: Week 1 Exit Ticket
 description: hacks and tangibles for the week
 type: tangibles
 courses: { csa: {week: 1} }
