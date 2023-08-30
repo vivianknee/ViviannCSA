@@ -10,7 +10,7 @@ courses: { csa: {week: 2} }
 type: hacks
 ---
 
-{% include nav_frontend.html %}
+{% include header.html %}
 
 <style>
 
