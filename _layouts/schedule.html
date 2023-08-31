@@ -39,13 +39,15 @@ Load all posts with site
 <!-- Output Column Headings for Blogs -->
 {%endcomment%}
 
-<table>
+<table class="styled-table">
+  </thead>
   <tr>
     <th>Week</th>
     <th>Plans</th>
     <th>Hacks(Todo)</th>
     <th>Tangibles</th>
   </tr>
+  </thead>
 
   {%comment%} 
   <!-- These loops group blogs according to Row (week) and Column (category) 
@@ -63,7 +65,6 @@ Load all posts with site
     {% assign plans = null | compact %}
     {% assign hacks = null | compact %}
     {% assign tangibles = null | compact %}
-
 
   {%comment%} 
   <!-- looping through all posts -->
@@ -112,24 +113,91 @@ Load all posts with site
   {%comment%} 
   <!-- This Loop is maximum iterationss, since elements are pairs it will decrement a extra times at the end -->
   {%endcomment%}
-  <tr>
-  <td> {{ index }} </td> 
-  <td>
-  {% for i in (0..units.size) -%} 
-    {% if units.size == 0 %}
-      {% break %}
-    {% elsif units[0] == sym %} <!-- make new column -->
-  </td>
-  <td>
-      {% assign units = units | shift %} <!-- remove delimiter -->
-    {% else %} <!-- make a link in the column -->
-      - <a href="{{site.baseurl}}/{{units[0]}}">{{units[1]}}</a> <br/> 
-      {% assign units = units | shift | shift %} <!-- remove title and url -->
-    {% endif %}
-  {% endfor %}
-  </td>
-  </tr>
-  {% endfor %}
-
+  <tbody>
+    <tr>
+    <td> {{ index }} </td> 
+    <td>
+    {% for i in (0..units.size) -%} 
+      {% if units.size == 0 %}
+        {% break %}
+      {% elsif units[0] == sym %} <!-- make new column -->
+    </td>
+    <td>
+        {% assign units = units | shift %} <!-- remove delimiter -->
+      {% else %} <!-- make a link in the column -->
+        - <a href="{{site.baseurl}}/{{units[0]}}">{{units[1]}}</a> <br/> 
+        {% assign units = units | shift | shift %} <!-- remove title and url -->
+      {% endif %}
+    {% endfor %}
+    </td>
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>
 {% endfor %}
+
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@400;700&family=REM&family=Space+Grotesk&display=swap');
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-size: 0.9em;
+    font-family: 'REM', sans-serif;
+    font-weight: 500;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .styled-table th,
+  .styled-table td {
+  padding: 12px 15px;
+  }
+
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+
+  .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+
+  h1{
+    font-size: 30px;
+    border-style: solid;
+    width: 350px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 2px solid #009879;
+    display: inline-block;
+    text-align: center;
+  }
+
+  h2{
+    margin-left: 25px;
+  }
+
+  p{
+    margin-left: 25px;
+  }
+
+</style>

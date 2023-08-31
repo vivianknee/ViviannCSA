@@ -1,103 +1,31 @@
 ---
-layout: none
+layout: default
 title: Student Blog
 ---
 
-<html>
-<body>
-<header>
-
-  <div id="container">
-    <nav>
-      <ul>
-        <li class="fork"><a href="{{site.baseurl}}/">Home</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/csa">CSA</a></li>
-        <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
-        <li class="title"><a href="{{ site.github.repository_url }}#readme">View On GitHub</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-</body>
-</html>
-
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@400;700&family=REM&family=Space+Grotesk&display=swap');
-
-    body{
-        margin: 0;
-        background: white;
-        font-family: 'REM', sans-serif;
-        font-weight: 500;
+    h1{
+    font-size: 30px;
+    border-style: solid;
+    width: 350px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 2px solid #009879;
+    display: inline-block;
+    text-align: center;
     }
 
-    .container{
-        width: 80%;
-        margin: 0 auto;
+    h2{
+        margin-left: 25px;
     }
 
-    header{
-        background: #55a6da;
-        padding: 20px;
+    p{
+        margin-left: 25px;
     }
-
-    header ::after{
-        content: '';
-        display: table;
-        clear: both;
-    }
-
-    nav{
-        float: center;
-        text-align: center;
-    }
-
-    nav ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    nav li{
-        display: inline-block;
-        margin-left: 70px;
-        padding-top: 13px;
-        position: relative;
-    }
-
-    nav a{
-        color: black;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 25px;
-    }
-
-    nav a:hover{
-        color: white;
-    }
-
-    nav a::before{
-        content: '';
-        display: block;
-        height: 5px;
-        width: 100px;
-        background-color: white;
-
-        position: absolute;
-        top: 0;
-        width: 0%;
-
-        transition: all ease-in-out 250ms;
-    }
-
-    nav a:hover::before{
-        width: 100%;
-    }
-
 </style>
 
-## Vivian's CSA Blog 
-Hi, my name is Vivian! I'm a rising senior for the class of 2024! Excited to do another year of code code code. Here's a little bit about me:
+<h1> Vivian's CSA Blog </h1>
+<p>Hi, my name is Vivian! I'm a rising senior for the class of 2024! Excited to do another year of code code code. Here's a little bit about me:</p>
 
 <div style="text-align: center;">
     <img src="images/aboutme.png" 
