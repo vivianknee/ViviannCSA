@@ -38,7 +38,15 @@ layout: default
         <p class="page-description">{{ page.description }}</p>
       {%- endif -%}
     {%- endif -%}
-    
+  
+    <style>
+      h2{
+        font-size: 18px;
+      }
+      p{
+        font-size: 12px;
+      }
+    </style>
 
     {% if page.categories.size > 0 and site.show_tags %}
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
