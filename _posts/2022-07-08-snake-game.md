@@ -7,7 +7,6 @@ image: /images/snake.png
 categories: [C4.9]
 tags: [javascript]
 courses: { csa: {week: 2} }
-type: hacks
 ---
 
 {% include header.html %}
