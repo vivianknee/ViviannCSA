@@ -4,6 +4,7 @@ layout: post
 title: Pair Plan Feedback
 description: Feedback from Chat GPT and Peers
 courses: { csa: {week: 2} }
+type: hacks
 ---
 
 - Chat GPT feedback on code:
