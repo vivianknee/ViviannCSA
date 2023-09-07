@@ -31,7 +31,7 @@ layout: default
     </p>
 
     {%- if page.description -%}
-      <h2>Description</h2>
+      <h2 class="description">Description</h2>
       {%- if site.html_escape.description -%}
         <p class="page-description">{{ page.description | escape }}</p>
       {%- else -%}
@@ -40,10 +40,10 @@ layout: default
     {%- endif -%}
   
     <style>
-      h2{
+      .description{
         font-size: 18px;
       }
-      p{
+      .page-description{
         font-size: 12px;
       }
     </style>
