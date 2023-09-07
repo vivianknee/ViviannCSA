@@ -10,7 +10,7 @@ type: hacks
 - Chat GPT feedback on code:
     - chat gpt noticed that its possible that when the code randomly chooses a color, repeat colors may occur so it wrote some code to ensure that each hex is unique.
     
-<script>
+```
     document.getElementById('generate-palette-button').addEventListener('click', () => {
     const colorInput = document.getElementById('color-input').value.toLowerCase();
     const colorPalette = colorPalettes[colorInput] || colorPalettes.default;
@@ -33,6 +33,6 @@ type: hacks
         }
         return newArray;
     }
-</script>
+```
 
 - Peer Feedback
