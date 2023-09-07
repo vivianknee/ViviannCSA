@@ -9,7 +9,7 @@ type: tangibles
 
 # Week 2 Exit Ticket
 Pair Plan Project
-- [Link]() to Pair Plan Project
+- [Link](https://vivianknee.github.io/VivianCSA//2023/09/06/pairplan.html) to Pair Plan Project
 - [Link](https://github.com/vivianknee/FastPages/issues/49#issue-1881165198) to Pair Plan (Due Monday)
 - [Link]() to feedback on Code
 - focus on input output
