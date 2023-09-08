@@ -25,8 +25,4 @@ Java output w/jquery hacks
 - Describe the difference between HTML and JavaScript.
 - Describe a benefit of a table that uses JavaScript.
 
-JS Games Hacks
-[Link](https://vivianknee.github.io/VivianCSA//2023/09/06/jsGamesHacks.html) to hacks
-- improvements to JS Itunes API, JS calculator, JS Game of life
-
 
