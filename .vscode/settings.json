@@ -3,6 +3,10 @@
         "appt",
         "delimeter",
         "delimeters",
-        "horl"
+        "horl",
+        "Lscore",
+        "Wscore",
+        "Xgame",
+        "Ygame"
     ]
 }
